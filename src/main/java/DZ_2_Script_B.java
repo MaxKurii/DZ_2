@@ -28,7 +28,7 @@ public class DZ_2_Script_B {
 
         for(int i = 0; i < 16; i ++){
             if(i == 0 || i == 1 || i == 7|| i == 13){
-                continue; // skip dashboard/ sell/ improve and configure titles
+                continue;
             }
             Driver_sleep.sleep(3000); //
             WebElement subMenu = driver.findElements(By.xpath("//nav/ul/li")).get(i);
@@ -44,21 +44,6 @@ public class DZ_2_Script_B {
             Driver_sleep.sleep(1000);
 
         }
-//        WebElement orders = driver.findElement(By.id("subtab-AdminParentOrders"));
-////        orders.click();
-//
-//        Driver_sleep.sleep(1000);
-//
-//
-//        String Url = driver.getCurrentUrl();
-//        driver.navigate().refresh();
-//        if (Url.equals(driver.getCurrentUrl())){
-//            System.out.println(driver.getTitle());
-//            System.out.println("Update check perfomed successfully");
-//        }else {
-//            System.out.println("Check for updates failed");
-//        }
-
 
 
     }
