@@ -25,19 +25,17 @@ public class DZ_2_Script_B {
 
         WebElement orders = driver.findElement(By.id("subtab-AdminParentOrders"));
         orders.click();
-        System.out.println("Заказы");
-        Driver_sleep.sleep(1000);
+
+
+        String Url = driver.getCurrentUrl();
+        System.out.println(Url);
 
         driver.navigate().refresh();
-
-        driver.getCurrentUrl();
-
-
-
-
-
-
-
+        if (Url.equals(driver.getCurrentUrl())){
+            System.out.println(driver.getTitle());
+        }else {
+            System.out.println("Not vine");
+        }
 
 
 
