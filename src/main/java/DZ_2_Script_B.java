@@ -26,15 +26,18 @@ public class DZ_2_Script_B {
         WebElement orders = driver.findElement(By.id("subtab-AdminParentOrders"));
         orders.click();
 
+        Driver_sleep.sleep(1000);
+
 
         String Url = driver.getCurrentUrl();
-        System.out.println(Url);
+
 
         driver.navigate().refresh();
         if (Url.equals(driver.getCurrentUrl())){
             System.out.println(driver.getTitle());
+            System.out.println("Update check perfomed successfully");
         }else {
-            System.out.println("Not vine");
+            System.out.println("Check for updates failed");
         }
 
 
