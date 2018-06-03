@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DZ_2 {
     public static void main(String[] args) {
-        WebDriver driver = initCromeDriver();
+        WebDriver driver = Driver.initCromeDriver();
 
         driver.get("http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/ ");
         WebElement ema = driver.findElement(By.id("email"));
@@ -19,19 +19,13 @@ public class DZ_2 {
 
         WebElement clik = driver.findElement(By.name("submitLogin"));
         clik.click();
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        Driver.sleep(4000);
 
         WebElement profile = driver.findElement(By.id("employee_infos"));
         profile.click();
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        Driver.sleep(3000);
 
         WebElement exit = driver.findElement(By.id("header_logout"));
         exit.click();
@@ -39,10 +33,6 @@ public class DZ_2 {
 
 
     }
-    public static WebDriver initCromeDriver(){
-        System.setProperty("webdriver.chrome.driver",DZ_2.class.getResource("chromedriver.exe").getPath());
-        return new ChromeDriver();
 
-    }
 
 }
