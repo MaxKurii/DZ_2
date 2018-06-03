@@ -19,12 +19,12 @@ public class DZ_2_Script_A {
         clik.click();
 
 
-        Driver_sleep.sleep(4000);
+        Driver_sleep.sleep(3000);
 
         WebElement profile = driver.findElement(By.id("employee_infos"));
         profile.click();
 
-        Driver_sleep.sleep(2000);
+        Driver_sleep.sleep(1000);
 
         WebElement exit = driver.findElement(By.id("header_logout"));
         exit.click();
