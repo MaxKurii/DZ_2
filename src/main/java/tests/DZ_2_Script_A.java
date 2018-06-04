@@ -32,6 +32,10 @@ public class DZ_2_Script_A {
         WebElement exit = driver.findElement(By.id("header_logout"));
         exit.click();
 
+        Driver_sleep.sleep(1000);
+
+        driver.close();
+
     }
 
 

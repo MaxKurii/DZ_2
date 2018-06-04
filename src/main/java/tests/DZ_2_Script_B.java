@@ -29,7 +29,7 @@ public class DZ_2_Script_B {
         Driver_sleep.sleep(3000);
 
         for(int i = 0; i < 16; i ++){
-            if(i == 0 || i == 1 || i == 7|| i == 13){
+            if(i == 1 || i == 7|| i == 13){
                 continue;
             }
             Driver_sleep.sleep(3000); //
@@ -45,7 +45,10 @@ public class DZ_2_Script_B {
             }
             Driver_sleep.sleep(1000);
 
+
+
         }
+        driver.close();
 
 
     }
