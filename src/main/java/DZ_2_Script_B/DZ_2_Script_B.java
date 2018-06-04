@@ -1,8 +1,10 @@
+package DZ_2_Script_B;
+
+import Driver_sleep.Driver_sleep;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.sql.SQLOutput;
 import java.util.concurrent.TimeUnit;
 
 public class DZ_2_Script_B {

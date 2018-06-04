@@ -1,3 +1,6 @@
+package DZ_2_Script_A;
+
+import Driver_sleep.Driver_sleep;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
